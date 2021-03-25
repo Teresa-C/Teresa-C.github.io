@@ -1,14 +1,35 @@
-.banner{
+/*.banner{
   height: 100vh;
-}
-
+}*/
+/*.content{
+  height: 60vh;
+}*/
 .banner-container{
-  margin-top: 80px;
+  height: 100vh;
+  /*margin-top: 80px;*/
 /*  background-color: #e0a899;*/
 }
 
+.banner-content{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "side main"
+}
+
+.banner-right{
+  grid-area: side;
+
+}
+.banner-right{
+  grid-area: main;
+  margin: auto;
+}
+
 .img-1{
-  border: 40px solid white;
+  border: 24px solid white;
   border-bottom: 80px solid white;
   border-radius: 8px;
 }
@@ -17,17 +38,19 @@
   border: 24px solid white;
   border-bottom: 64px solid white;
   border-radius: 8px;
-  position: relative;
-  top: 145px;
+/*  position: relative;
+  top: 145px;*/
 }
 
-.banner-content{
-  margin-top: 132px;
-  margin-left: 100px;
-  color: black;
-  font-weight: bold;
+.content{
+  margin-bottom: 200px;
 }
-/*#97847a*/
+
+.left-text{
+  margin-top: 64px;
+}
+
+#97847a
 .box{
   height: 60%;
   width: 55%;
@@ -37,7 +60,7 @@
   position: absolute;
   top: 108px;
   left: 600px;
-/*  background-color: #97847a;*/
+  background-color: #97847a;
   border-radius: 8px;
   opacity: 0.7;
 }
@@ -52,7 +75,7 @@
   position: absolute;
   bottom: 32px;
   left: 300px;
-  background-color: black;
+  background-color: blue;
   opacity: 0.7;
 }
 
