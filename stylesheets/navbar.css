@@ -1,6 +1,6 @@
 .navbar-lewagon {
-  /*background: white;*/
-
+  background-color: white;
+  opacity: 0.9;
 }
 
 .navbar-lewagon .navbar-collapse {
