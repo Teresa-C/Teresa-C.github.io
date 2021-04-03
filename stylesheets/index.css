@@ -1,46 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 @import url("navbar.css");
-@import url("cards.css");
 @import url("avatar.css");
+/*@import url("cards.css");
 @import url("footer.css");
 @import url("banner.css");
 @import url("scroll.css");
-@import url("project.css");
+@import url("project.css");*/
 
-@media (max-width: 960px) {
-  /* For a screen < 960px, this CSS will be read */
-  .main-container {
-    width: 700px;
+/*@media (max-width: 800px) {
+
+  .top .left-side{
+    background-color: red;
   }
-}
-@media (max-width: 720px) {
-  /* For a screen < 720px, this CSS will be read */
-  .main-container {
-    width: 500px;
+
+  .top .content-container{
+    flex-flow: row wrap;
+    background-color: green;
+    top: 30%;
   }
+  .project-container{
+    background-color: blue;
+  }
+}*/
+/*@media (max-width: 720px) {
+
+
+
 }
 @media (max-width: 540px) {
-  /* For a screen < 540px, this CSS will be read */
-  .main-container {
-    width: 300px;
+  .top .content-container{
+    display: block;
   }
-}
+}*/
 
+/*.landing-container .container{
+  width: 80%;
+}*/
 
 body{
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-size: 20px;
-  color: rgb(87,87,87);
+  color: black;
   /*background-color:   #F5F5F5;*/
-  background-color: #e0a899;
+ /* background-color: #e0a899;*/
   text-align: center;
+  margin: 0;
+  padding: 0px;
 }
 
 
 h1{
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
+  font-weight: bold;
+  font-size: 3em;
+}
+
+h2{
+  margin-top: 5%;
+}
+
+hr{
+  border: 1px solid ;
+  width: 50px;
+}
+.gradient-text {
+    background-color: #f3ec78;
+    background-image: linear-gradient(45deg, #f3ec78, #af4261);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 }
 
 .main-container {
@@ -48,7 +79,151 @@ h1{
   margin: 0 auto;
 }
 
-.title{
+/*Landing page*/
+
+.landing-container{
+  display: flex;
+  height: 90vh;
+}
+
+.left-side{
+  flex: 0 0 35%;
+  background-color: #9FB1BC;
+}
+
+.right-side{
+  flex: 0 0 65%;
+  background-color: white;
+}
+
+.content-container{
+  position: relative;
+  bottom: 88%;
+/*  left: 20%;*/
+  min-height: 55%;
+  width: 135vh;
+  background-color: white;
+  display: flex;
+  padding-left: 0px;
+}
+
+.profile-card{
+  background-color: #d9e4dd;
+/*  padding: 8px 16px;*/
+  width: 90vw;
+}
+
+.profile-content{
+  background-color: white;
+  padding-left: 64px;
+  text-align: left;
+  flex-grow: 2;
+}
+
+.contact-icon{
+  height: 10vh;
+  font-size: 32px;
+  padding: 8px;
+  color: black;
+}
+
+/*profile content*/
+.title-large{
+  letter-spacing: 4px;
+  text-align: left;
+}
+
+.buttons{
+  display: flex;
+  align-items: center;
+  padding: 24px 0px;
+}
+
+.btn-color{
+  background-color: #d9e4dd;
+/*  background-color: #A6D0E4;*/
+  border-radius: 16px;
+  padding: 8px 12px;
+  color: #07689f;
+  margin-left: 24px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  height: fit-content;
+
+}
+
+.btn-color:hover{
+  transition-duration: 0.5s;
+  color: white;
+}
+
+.buttons a{
+  text-decoration: none;
+}
+
+.btn-clear{
+  border: 2px solid #07689f;
+  color: #07689f;
+  border-radius: 16px;
+  padding: 6px 16px;
+  font-size: 16px;
+  height: fit-content;
+  letter-spacing: 2px;
+}
+
+.btn-clear:hover{
+  border: 2px solid #07689f;
+  color: white;
+  background-color: #07689f;
+  transition-duration: 0.7s;
+}
+
+.buttons a{
+  text-decoration: none;
+}
+
+/*project*/
+.project-card{
+  display: flex;
+  height: auto;
+  padding: 16px;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.project-content{
+  flex: 0 0 60%;
+  padding: 16px;
+  text-align: left;
+  color: black;
+}
+
+.project-img{
+  flex: 0 0 40%;
+}
+
+.project-img .img{
+  height: 100%;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.title{
   background-image: url(cocktail.jpg);
   font-size: 64px;
   font-weight: bold;
@@ -61,13 +236,13 @@ a{
 
 }
 
-/*.container{
+.container{
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-}*/
+}
 
 
 .about-container{
@@ -81,4 +256,4 @@ a{
   display: inline-grid;
 
 }
-
+*/
