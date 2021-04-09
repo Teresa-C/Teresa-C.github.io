@@ -21,9 +21,10 @@
         <li class="nav-item active">
           <a class="nav-link" href="#project">Projects</a>
         </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#" target="_blank">Resume</a>
+        </li> -->
         <li class="nav-item">
-          <a class="nav-link" href="https://github.com/Teresa-C" target="_blank">Github</a>
-        </li><li class="nav-item">
           <a class="nav-link" href="https://www.linkedin.com/in/teresa-chang-a474a7a0" target="_blank">Linkedin</a>
         </li>
         <li class="nav-item dropdown">
@@ -42,7 +43,7 @@
       <div class="left-side"></div>
       <div class="right-side"></div>
     </div>
-    <div class="content-container container">
+    <div class="content-container container-md">
       <div class="profile-card">
         <div class="text">
           <img src="images/photo.jpeg" alt="profile photo" class="img-circle">
@@ -52,15 +53,15 @@
           <p class="p-3">Full Stack Developer</p>
         </div>
         <div class="contact-icon">
-          <i class="fab fa-linkedin"></i>
-          <i class="fab fa-github-square"></i>
+          <a href="https://www.linkedin.com/in/teresa-chang-a474a7a0" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/Teresa-C" target="_blank"><i class="fab fa-github-square"></i></a>
         </div>
       </div>
       <div class="profile-content">
         <h1 class="title-large mt-5">HELLO</h1>
         <div class="buttons">
           <a href="#project" class="btn-clear">PROJECTS</a>
-          <a href="#" class="btn-color">RESUME</a>
+  <!--         <a href="#" class="btn-color">RESUME</a> -->
         </div>
         <p class="mt-3">I recently graduated from Le Wagon full stack development bootcamp. I have previous customer service experience and now looking to change career.</p>
         <p>I enjoy working with others and building applications.</p>
@@ -72,110 +73,51 @@
   <div class="project-container py-5" id="project">
    <div class="container">
     <h2 class="text-center project-title">PROJECTS</h2>
-    <p>Check out some of my projects</p>
+    <p class="py-3">Check out some of my projects</p>
     <div class="project-card">
-      <div class="project-content">
+      <div class="project-content mt-5">
         <h3>Illuminate</h3>
         <p><u>Description</u></p>
-        <p>Created an application in two weeks to help find the correct lightbulb.</p>
-        <p><u>Technologies</u></p>
-        <p>Ruby on Rails, Javascript ES6, SCSS, HTML, Git</p>
+        <p>Created an application in two weeks to help users find the correct lightbulb. This application prioritises mobile responsiveness. Worked in a team of three and used web scraping to gather data.</p>
+        <p><u>Technologies Used</u></p>
+        <p>Ruby on Rails, Javascript ES6, SCSS, HTML, Bootstrap, Git</p>
+        <a class="mr-5 btn-clear" href="https://www.illuminate-app.tech" target="_blank"><i class="fas fa-eye mr-2"></i>Live Website</a>
+        <a class="btn-clear" href="https://github.com/kurtpeniket/illuminate"><i class="fab fa-github-square pr-2"></i>Github Code</a>
       </div>
       <div class="project-img">
         <img src="images/illuminate.png" alt="illuminate" class="img">
       </div>
     </div>
     <div class="project-card">
-      <div class="project-content">
-        <h3>Illuminate</h3>
+      <div class="project-content mt-5">
+        <h3>Cocktail</h3>
         <p><u>Description</u></p>
-        <p>Created an application in two weeks to help find the correct lightbulb.</p>
-        <p><u>Technologies</u></p>
-        <p>Ruby on Rails, Javascript ES6, SCSS, HTML, Git</p>
+        <p>Designed a responsive web application that allows the user to upload their cocktail recipes and images. I used Cloudinary API to store all user's uploaded images.</p>
+        <p><u>Technologies Used</u></p>
+        <p>Ruby on Rails, Javascript ES6, SCSS, HTML, API</p>
+        <a class="mr-5 btn-clear" href="https://cocktailssapp.herokuapp.com/cocktails" target="_blank"><i class="fas fa-eye mr-2"></i>Live Website</a>
+        <a class="btn-clear" href="https://github.com/Teresa-C/rails-mister-cocktail"><i class="fab fa-github-square pr-2"></i>Github Code</a>
       </div>
       <div class="project-img">
-        <img src="images/illuminate.png" alt="illuminate" class="img">
+        <img src="images/cocktail.png" alt="cocktails" class="img">
       </div>
     </div>
     <div class="project-card">
       <div class="project-content">
-        <h3>Illuminate</h3>
+        <h3>Aircars</h3>
         <p><u>Description</u></p>
-        <p>Created an application in two weeks to help find the correct lightbulb.</p>
-        <p><u>Technologies</u></p>
-        <p>Ruby on Rails, Javascript ES6, SCSS, HTML, Git</p>
+        <p>Developed a web application in one weeks and hosted on Heroku. It allows users to list their cars to rent and to browse other cars. I also used Mapbox API to display the locations of the cars. </p>
+        <p><u>Technologies Used</u></p>
+        <p>Ruby on Rails, Javascript ES6, SCSS, HTML, Figma, API</p>
+        <a class="mr-5 btn-clear" href="https://aircars.herokuapp.com" target="_blank"><i class="fas fa-eye mr-2"></i>Live Website</a>
+        <a class="btn-clear" href="https://github.com/Teresa-C/rails-car-rental"><i class="fab fa-github-square pr-2"></i>Github Code</a>
       </div>
       <div class="project-img">
-        <img src="images/illuminate.png" alt="illuminate" class="img">
+        <img src="images/aricars.png" alt="aircars" class="img">
       </div>
     </div>
   </div>
   </div>
-
-
-    <!-- <div class="row project-box">
-      <div class="col-md-6">
-        <img src="images/cocktail.png" alt="cocktail app photo" width="400px">
-      </div>
-      <div class="col-md-6 text-left">
-        <h3>Cocktail app</h3>
-        <p>This is a web app that allows users to share and upload their favourite drinks. It demostrates common features of using cloud based image services.</p>
-        <h4 >Technology used</h4>
-        <ul>
-          <li>Rails</li>
-          <li>Ruby</li>
-          <li>Bootstrap</li>
-          <li>Heroku</li>
-          <li>Web design</li>
-        </ul>
-        <a class="mr-5" href="https://cocktailssapp.herokuapp.com/cocktails" target="_blank"><i class="fas fa-eye mr-2"></i>Live preview</a>
-        <a href="https://github.com/Teresa-C/rails-mister-cocktail"><i class="fab fa-github-square pr-2"></i>Github Code</a>
-      </div>
-    </div>
-
-    <div class="row project-box">
-      <div class="col-md-6">
-        <img src="images/illuminate-form.png" alt="illuminate app photo" width="400px">
-      </div>
-      <div class="col-md-6 text-left">
-        <h3>Illuminate app</h3>
-        <p>This application was created for any frustrated users looking for the correct lightbulbs.</p>
-        <h4 >Technology used</h4>
-        <ul>
-          <li>Rails</li>
-          <li>Ruby</li>
-          <li>Bootstrap</li>
-          <li>Heroku</li>
-          <li>API</li>
-        </ul>
-        <a class="mr-5" href="https://www.illuminate-app.tech" target="_blank"><i class="fas fa-eye mr-2"></i>Live preview</a>
-        <a href="https://github.com/kurtpeniket/illuminate"><i class="fab fa-github-square pr-2"></i>Github Code</a>
-      </div>
-    </div>
-
-
-    <div class="row project-box">
-      <div class="col-md-6">
-        <img src="images/landingpage.png" alt="landing page photo" width="400px">
-      </div>
-      <div class="col-md-6 text-left">
-        <h3>Landing page</h3>
-        <p>Created a landing page that taught me the basics of using CSS.</p>
-        <h4 >Technology used</h4>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Git</li>
-          <li>Web design</li>
-        </ul>
-        <a class="mr-5 " href="https://teresa-c.github.io/landing" target="_blank"><i class="fas fa-eye mr-2"></i>Live preview</a>
-        <a href="https://github.com/Teresa-C/landing" target="_blank"><i class="fab fa-github-square pr-2"></i>Github Code</a>
-      </div>
-    </div>
-  </div> -->
-
-
-
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
