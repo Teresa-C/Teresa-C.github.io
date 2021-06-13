@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 @import url("navbar.css");
 @import url("avatar.css");
 
-
-body{
-  font-family: 'Poppins', sans-serif;
+body {
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: 20px;
   color: black;
@@ -13,42 +12,45 @@ body{
   padding: 0px;
 }
 
-
-h1{
-  font-family: 'Montserrat', sans-serif;
+h1 {
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 3em;
 }
 
-h2{
+h2 {
   margin-top: 5%;
   font-size: 2em;
   font-weight: bold;
 }
 
-h3{
+h3 {
   font-size: 1.5em;
   font-weight: bold;
 }
 
-hr{
-  border: 1px solid ;
+hr {
+  border: 1px solid;
   width: 50px;
 }
 
-a{
+strong {
+  font-weight: bold;
+}
+
+a {
   color: #07689f;
   text-decoration: none !important;
 }
 
 .gradient-text {
-    background-color: #f3ec78;
-    background-image: linear-gradient(45deg, #f3ec78, #af4261);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+  background-color: #f3ec78;
+  background-image: linear-gradient(45deg, #f3ec78, #af4261);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 .main-container {
@@ -58,25 +60,25 @@ a{
 
 /*Landing page*/
 
-.landing-container{
+.landing-container {
   display: flex;
   height: 90vh;
 }
 
-.left-side{
+.left-side {
   flex: 0 0 35%;
-  background-color: #9FB1BC;
+  background-color: #9fb1bc;
 }
 
-.right-side{
+.right-side {
   flex: 0 0 65%;
   background-color: white;
 }
 
-.content-container{
+.content-container {
   position: relative;
   bottom: 88%;
-/*  left: 20%;*/
+  /*  left: 20%;*/
   min-height: 55%;
   width: 135vh;
   background-color: white;
@@ -84,40 +86,39 @@ a{
   padding-left: 0px;
 }
 
-.profile-card{
+.profile-card {
   background-color: #d9e4dd;
-/*  padding: 8px 16px;*/
+  /*  padding: 8px 16px;*/
   width: 90vw;
 }
 
-.profile-content{
+.profile-content {
   background-color: white;
   padding-left: 64px;
   text-align: left;
-  flex-grow: 2;
+  /* flex-grow: 2; */
 }
 
-.contact-icon{
+.contact-icon {
   height: 10vh;
   font-size: 32px;
   padding: 8px;
   color: black;
 }
 
-
 /*profile content*/
-.title-large{
+.title-large {
   letter-spacing: 4px;
   text-align: left;
 }
 
-.buttons{
+.buttons {
   display: flex;
   align-items: center;
   padding: 24px 0px;
 }
 
-.btn-color{
+.btn-color {
   background-color: #d9e4dd;
   border-radius: 16px;
   padding: 8px 12px;
@@ -126,19 +127,18 @@ a{
   font-size: 16px;
   letter-spacing: 2px;
   height: fit-content;
-
 }
 
-.btn-color:hover{
+.btn-color:hover {
   transition-duration: 0.3s;
   color: #2d3b41;
 }
 
-.buttons a{
+.buttons a {
   text-decoration: none;
 }
 
-.btn-clear{
+.btn-clear {
   border: 2px solid #07689f;
   color: #07689f;
   border-radius: 16px;
@@ -148,48 +148,49 @@ a{
   letter-spacing: 2px;
 }
 
-.btn-clear:hover{
+.btn-clear:hover {
   border: 2px solid #07689f;
   color: white;
   background-color: #07689f;
   transition-duration: 0.7s;
 }
 
-.buttons a{
+.buttons a {
   text-decoration: none;
 }
 
 /*project*/
-.project-container{
+.project-container {
   /*background-color: #d6e8f3;*/
 }
 
-.project-card{
+.project-card {
   display: flex;
   height: auto;
   padding: 16px;
   margin: 64px auto;
   width: 100%;
- /* background-color: #9FB1BC;*/
+  background-color: #d9e5dc;
+  border-radius: 8px;
+  box-shadow: 2px 3px #b8c3bb;
 }
 
-.project-content{
+.project-content {
   flex: 0 0 60%;
   padding: 16px 64px 16px 0px;
   text-align: left;
   color: black;
 }
 
-.project-img{
+.project-img {
   flex: 0 0 40%;
 }
 
-.project-img .img{
+.project-img .img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
-
 
 /*@media (max-width: 800px) {
 
@@ -206,3 +207,30 @@ a{
     background-color: blue;
   }
 }*/
+@media (max-width: 1024px) {
+  .project-card {
+    display: block;
+  }
+}
+
+@media (max-width: 750px) {
+  .project-card {
+    display: block;
+  }
+  .btn-clear {
+    display: block;
+    width: fit-content;
+    margin-bottom: 32px;
+  }
+  .profile-card {
+    display: none;
+  }
+  .profile-content {
+    width: 400px;
+    margin-bottom: 32px;
+    /* background-color: blue; */
+  }
+  .left-side {
+    flex: 0 0 100%;
+  }
+}
