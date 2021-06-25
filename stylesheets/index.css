@@ -170,9 +170,9 @@ a {
   padding: 16px;
   margin: 64px auto;
   width: 100%;
-  background-color: #d9e5dc;
+  background-color: #eceaea79;
   border-radius: 8px;
-  box-shadow: 2px 3px #b8c3bb;
+  box-shadow: 2px 3px #b8b8b879;
 }
 
 .project-content {
@@ -192,21 +192,6 @@ a {
   object-fit: cover;
 }
 
-/*@media (max-width: 800px) {
-
-  .top .left-side{
-    background-color: red;
-  }
-
-  .top .content-container{
-    flex-flow: row wrap;
-    background-color: green;
-    top: 30%;
-  }
-  .project-container{
-    background-color: blue;
-  }
-}*/
 @media (max-width: 1024px) {
   .project-card {
     display: block;
